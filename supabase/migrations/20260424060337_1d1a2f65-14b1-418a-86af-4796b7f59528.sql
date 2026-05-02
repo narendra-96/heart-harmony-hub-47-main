@@ -1,0 +1,11 @@
+
+ALTER TABLE public.profiles
+  ADD COLUMN IF NOT EXISTS alternate_phone TEXT,
+  ADD COLUMN IF NOT EXISTS time_of_birth_period TEXT,
+  ADD COLUMN IF NOT EXISTS photo_url_2 TEXT,
+  ADD COLUMN IF NOT EXISTS photo_url_3 TEXT,
+  ADD COLUMN IF NOT EXISTS photo_url_4 TEXT,
+  ADD COLUMN IF NOT EXISTS family_photo_url TEXT,
+  ADD COLUMN IF NOT EXISTS parent_name TEXT,
+  ADD COLUMN IF NOT EXISTS parent_phone TEXT,
+  ADD COLUMN IF NOT EXISTS parent_relation TEXT;
